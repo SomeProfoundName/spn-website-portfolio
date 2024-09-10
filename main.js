@@ -13,7 +13,7 @@ const scene = new THREE.Scene();
 // scene.add(ballMesh);
 
 const gltfloader = new GLTFLoader();
-gltfloader.load('./public/assets/Collins/Me.glb', function (gltf) {
+gltfloader.load('./public/assets/collins/collins.glb', function (gltf) {
     gltf.scene.scale.set(3.5, 3.5, 3.5)
     gltf.scene.position.y = -3
     scene.add(gltf.scene)
