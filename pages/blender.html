@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blender</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/blender.css">
+  <link rel="stylesheet" href="./css/blender-carousel.css">
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+</head>
+
+<body>
+  <section class="main">
+    <img class="background" src="../images/backgrounds/Blender.jpg" alt="">
+    <div class="main-container">
+      <div class="card">
+        <img src="../assets/playing-cards/Blender.png" class="playing-card"
+          alt="an image of a playing card with the words blender and tall boxy glass case with a marble base in the background">
+      </div>
+      <div class="about-project">
+        <h2>Blender</h2>
+        <p>
+          Work made using Blender.
+        </p>
+        <div class="lists">
+          <div class="li-skills">
+            <ul>
+              <h3>Skills</h3>
+              <li>3D Modelling</li>
+              <li>3D Scanning</li>
+              <li>Blender Node Tree</li>
+              <li>Compositing</li>
+            </ul>
+          </div>
+          <div class="li-skills">
+            <ul>
+              <h3>Skills</h3>
+              <li>Blender</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>Artivive App</li>
+              <li>Samsung 3D Scanning App</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content">
+    <div class="one">
+      <img src="./content/Blender/Loot cases Render.png" alt="">
+      <div class="one-caption">
+        <p>Work made on blender experiementing what loot boxes may look like if the loot you were winning was not a surprise</p>
+      </div>
+    </div>
+    <hr>
+      <div class="image"><img src="../pages/content/Blender/Boxes.png" alt=""></div>
+      <div class="image"><video src="../pages/content/Blender/Artivive.mp4" controls autoplay></video></div>
+    <div class="two-caption">
+      <p>Experiementing with AR and Geometry Nodes</p>
+      <p>Carousel is a work in progress. Please mind the design</p>
+    </div>
+    <hr>
+    <canvas class="table"></canvas>
+    <canvas class="tv"></canvas>
+  </section>
+
+  <script src="./carousel.js"></script>
+  <script type="text/javascript" src="../../vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector('.card'), {
+      glare: true,
+      "max-glare": 1,
+    });
+  </script>
+</body>
+
+</html>

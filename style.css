@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Albert Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}
+
+body {
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: bold;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 2rem;
+}
+
+
+/* landing */
+
+.landing {
+    height: 100vh;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.me p {
+    opacity: .3;
+    position: relative;
+    transform: translateY(-20px);
+}
+
+.landing-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 1780px) {
+    .landing-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .me {
+        text-align: center;
+    }
+}
+
+.intro {
+    align-content: center;
+    margin-left: 30px;
+    width: 70%;
+}
+
+.intro h1 {
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+
+#port {
+    margin-top: 5px;
+}
+
+.a-link {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.a-link:visited {
+    color: black;
+}
+
+.icons-top a:visited {
+    color: black
+}
+
+
+/* .intro-image {
+    width: auto;
+    align-content: center;
+}
+
+.intro-image img {
+    width: 500px;
+} */
+
+/* about me / work */
+
+.work {
+    display: flex;
+    gap: 50px;
+    margin: 0px 50px
+}
+
+.about-me h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-me p {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.thoughts h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.thoughts p {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1500px) {
+    .work {
+        flex-wrap: wrap;
+    }
+
+}
+
+/* card css */
+
+.project-section {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.project-section h2{
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.projects {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 30px;
+}
+
+.card-container {
+    position: relative;
+    width: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:0px;
+}
+
+.card-container .card {
+    position: relative;
+    max-width: 300px;
+    height: 250px;
+    background-color: #f5f5f5;
+    margin: 30px 15px;
+    padding: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: .3s ease-in-out;
+    border-radius: 15px;
+}
+
+.card-container .card:hover {
+    height: 350px;
+}
+
+.card-container .card .image {
+    position: relative;
+    width: 250px;
+    height: 60px;
+    top: -35%;
+    left: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    
+    z-index: 1;
+}
+
+.card-container .card .image img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.card-container .card .content {
+    position: relative;
+    top: -50%;
+    padding: 15px 15px;
+    text-align: center;
+    
+    visibility: hidden;
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.card-container .card:hover .content {
+    margin-top: 250px;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.3;
+}
+
+.project-title {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.caption {
+    margin-top: 10px;
+    font-family: "Albert Sans", sans-serif;
+    font-size: 1rem;
+}
+
+/* footer */
+
+.footer-container {
+    position: sticky;
+    width: 100%;
+    height: 25px;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.icons a:visited {
+    color: white
+}
+
