@@ -5,19 +5,19 @@ import './style.css'
 
 const scene = new THREE.Scene();
 
-const geometry = new THREE.SphereGeometry(3, 64, 64);
-const material = new THREE.MeshStandardMaterial({
-  color: '#00ff83'
-})
-const ballMesh = new THREE.Mesh(geometry, material)
-scene.add(ballMesh);
-
-// const gltfloader = new GLTFLoader();
-// gltfloader.load('./public/assets/collins/collins.glb', function (gltf) {
-//     gltf.scene.scale.set(3.5, 3.5, 3.5)
-//     gltf.scene.position.y = -3
-//     scene.add(gltf.scene)
+// const geometry = new THREE.SphereGeometry(3, 64, 64);
+// const material = new THREE.MeshStandardMaterial({
+//   color: '#00ff83'
 // })
+// const ballMesh = new THREE.Mesh(geometry, material)
+// scene.add(ballMesh);
+
+const gltfloader = new GLTFLoader();
+gltfloader.load('./public/assets/collins/collins.glb', function (gltf) {
+    gltf.scene.scale.set(3.5, 3.5, 3.5)
+    gltf.scene.position.y = -3
+    scene.add(gltf.scene)
+})
 
 const size = {
     width : 550,
