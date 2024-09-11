@@ -13,7 +13,7 @@ export default defineConfig({
         freelance: resolve(__dirname, "freelance/freelance.html"),
         walkingwifi: resolve(__dirname, "walking-wifi/walking-wifi.html"),
         degreeshow: resolve(__dirname, "degree-show/degree-show.html"),
-
+        coding: resolve(__dirname, 'coding/coding.html')
       },
     },
   },

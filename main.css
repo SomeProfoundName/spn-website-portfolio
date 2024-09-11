@@ -65,14 +65,14 @@ h2 {
 
 .card {
     height: 500px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 
 .card img{
     height: 500px;
     box-shadow: 1px 1px 5px black;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .about-project p {
