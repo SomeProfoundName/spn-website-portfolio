@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
 
+
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+:root {
+    --clr-1: #FF0000;
+    --clr-2: #FF7F00;
+    --clr-3: #FFFF00;
+    --clr-4: #00FF00;
+    --clr-5: #0000FF;
+    --clr-6: #4B0082;
+    --clr-7: #9400D3;
+}
+
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -186,11 +204,39 @@ h2 {
     flex-direction: column;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     transition: .3s ease-in-out;
-    border-radius: 15px;
+    border-radius: 9px;
 }
 
 .card-container .card:hover {
     height: 350px;
+}
+
+.card:hover::after, .card:hover::before{
+    content: "";
+    position: absolute;
+    inset: -5px;
+    z-index: -1;
+    background: linear-gradient(
+        var(--gradient-angle),
+        var(--clr-1),
+        var(--clr-2),
+        var(--clr-3),
+        var(--clr-4),
+        var(--clr-5),
+        var(--clr-6),
+        var(--clr-7)
+    );
+    border-radius: 15px;
+    animation: rotation 20s linear infinite;
+}
+
+.card::after{
+    filter: blur(2.5rem);
+}
+
+@keyframes rotation {
+    0% {--gradient-angle: 0deg;}
+    100% {--gradient-angle: 360deg;}    
 }
 
 .card-container .card .image {
