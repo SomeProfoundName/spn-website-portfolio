@@ -204,8 +204,10 @@ h2 {
     flex-direction: column;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     transition: .3s ease-in-out;
-    border-radius: 9px;
+    border-radius: 13px;
 }
+
+/* CARD BORDER ANIMATION */
 
 .card-container .card:hover {
     height: 350px;
@@ -214,7 +216,7 @@ h2 {
 .card:hover::after, .card:hover::before{
     content: "";
     position: absolute;
-    inset: -5px;
+    inset: -2px;
     z-index: -1;
     background: linear-gradient(
         var(--gradient-angle),
@@ -231,7 +233,7 @@ h2 {
 }
 
 .card::after{
-    filter: blur(2.5rem);
+    filter: blur(1rem);
 }
 
 @keyframes rotation {
