@@ -2,6 +2,11 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
+  server: {
+    host: true,
+    strictPort: true,
+    port: 8080
+  },
   build: {
     rollupOptions: {
       input: {
