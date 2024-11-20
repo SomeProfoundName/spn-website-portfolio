@@ -84,6 +84,35 @@ h2 {
     }
 }
 
+@media (max-width: 600px) {
+    .landing-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        transform: scale(.8);
+    }
+    .me {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 512px) {
+    .landing-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+    .me {
+        text-align: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+}
+
+
 .intro {
     align-content: center;
     margin-left: 30px;
